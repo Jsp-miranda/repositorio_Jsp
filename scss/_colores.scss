@@ -1,0 +1,125 @@
+$rojoMarca: #e41a31;
+$gris55: #6a6a6a;
+$gris67: #3a3939;
+$gris78: #141414;
+$blanco: #ffffff; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BIENVENIDO A VARIABLES    NOTAS CLASE 11
+
+
+Las variables son estilos preseteados que SE REPITEN O REUTILIZAN EN MUCHAS SECCIONES de nuestra pagina
+Estas pueden llegar a ser por ejemplo:
+
+COLORES
+
+DIMENCIONES
+
+FUENTES
+
+para poder llemarlas dentro de nuestro archivo (averiguar como)
+es necesario anteponer el simbolo del peso " $ $ seguido por el nombre de nuestra variable
+
+$tipografia-para-h1:normal 24px/1.5"Helvetica", sans-serif
+
+o tambien puede guardar los colores que ya predestinamos para nuestra página
+
+$color-rojo:#696969
+
+--------------------------------------------------------------------------------------------------
+
+un ejemplo de var podriaN SER LOS COLORES DE LA MARCA
+
+$rojo-marca:#393939;
+$negro-marca:#5gh41;
+$blanco-marca:#fffffff;
+etc
+
+(estos son valores ficticios)
+
+--------------------------------------------------------------------------------------------------
+
+
+VARIABLES GLOBALES       V/S        variables locales
+
+Una variable global es la cual guardamos en este achivo y que despues solo la llamaremos en las distintas hojas de nuestro scss
+
+en cambio
+
+una variable local es la cual se coloca DENTRO de una seccion de codigo ej
+
+.rrssIndex {                   ---------> MURO
+
+    $azul-prueba-de-var-local: #7545FF; ---------> VAR LOCAL           
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-end; 
+
+}                              ---------> MURO
+
+cada vez que una var este dentro de una seccion de codigo esta pasara a tener el nombre de variable LOCAL
+y SOLO AFECTA A ESA PORCION DEL CODIGO! 
+NUNCA A MAS 
+en este caso los muros que limitran que esta variable sea global son las llaves que le colocamos al codigo { }
+
+
+
+--------------------------------------------------------------------------------------------------
+
+
+REPASAR DEFAULT PARA LAS VARS
+
+
+
+
+*/

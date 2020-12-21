@@ -132,7 +132,7 @@ h3 {
   padding: 5px; }
 
 .titularDePagina {
-  background-image: url(img/portadas/portada1.jpg);
+  background-image: linear-gradient(to bottom, #3a3939, #141414);
   height: 80vh;
   width: 100vw;
   display: flex;
@@ -157,10 +157,6 @@ h3 {
 .titularDePagina__estiloDeBoton:hover {
   background-color: #141414; }
 
-@media only screen and (min-width: 360px) and (max-width: 768px) {
-  .titularDePagina__titulo {
-    font-size: 250%; } }
-
 .rrssIndex {
   display: flex;
   flex-direction: row;
@@ -181,10 +177,6 @@ h3 {
   text-decoration: underline #ffffff;
   color: #ffffff;
   transition: all 0.5s; }
-
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-  .rrssIndex {
-    display: none; } }
 
 .rrssIndexContacto {
   display: flex;
@@ -207,10 +199,6 @@ h3 {
   color: #ffffff;
   transition: all 0.5s; }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-  .rrssIndex {
-    display: none; } }
-
 /* HEADER FIN */
 /* MAIN INICIO */
 .mensajeSaludo {
@@ -226,10 +214,6 @@ h3 {
   margin: 5px 20px;
   color: #ffffff;
   transition: all 0.5s; }
-
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-  .mensajeSaludo {
-    margin: 150px 0px 0px 0px; } }
 
 /* MAIN FINAL */
 /* ASIDE INICIO */
@@ -285,16 +269,6 @@ h3 {
   text-decoration: underline #ffffff;
   color: #ffffff;
   transition: all 0.5s; }
-
-@media only screen and (min-width: 360px) and (max-width: 768px) {
-  .aside {
-    margin: 150px 0px 0px 0px; }
-  .aside__contactoMailTelegram {
-    margin: 0px -5px; }
-  .aside__botonPortfolio {
-    margin: 0px 5px; }
-  .aside__sociales {
-    margin: 0px -5px; } }
 
 /* ASIDE FINAL */
 /* DESCRIPCION INICIO */
@@ -384,3 +358,30 @@ img {
   margin: 50px; }
   .formulario label {
     color: #ffffff; }
+
+/* MEDIS QUERYS INDEX */
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .titularDePagina__titulo {
+    font-size: 250%; } }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .rrssIndex {
+    display: none; } }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .rrssIndex {
+    display: none; } }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .mensajeSaludo {
+    margin: 150px 0px 0px 0px; } }
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .aside {
+    margin: 150px 0px 0px 0px; }
+  .aside__contactoMailTelegram {
+    margin: 0px -5px; }
+  .aside__botonPortfolio {
+    margin: 0px 5px; }
+  .aside__sociales {
+    margin: 0px -5px; } }

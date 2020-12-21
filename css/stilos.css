@@ -138,7 +138,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 90px 0 0 0;
+  margin: 0px 0 0 0;
   padding: 100px 30px 30px 0px; }
 
 .titularDePagina__contenedorBoton {
@@ -290,14 +290,6 @@ h3 {
   color: #ffffff;
   transition: all 0.5s; }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-  .descripcionIndex {
-    margin: 10px 10px 150px 10px; }
-  .descripcionIndex p {
-    font-size: 150%;
-    font-weight: lighter;
-    text-align: left; } }
-
 /* DESCRIPCION FINAL */
 /* CLIENTES INICIO */
 .clientes {
@@ -319,17 +311,6 @@ img {
 .clientes img:hover {
   transform: translateY(-20px); }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-  .clientes h2 {
-    font-size: 112%;
-    text-transform: none;
-    text-align: center;
-    font-weight: normal; }
-  article {
-    align-items: center; }
-  img {
-    width: 120px; } }
-
 /* CLIENTES FINAL */
 /* FOOTER INICIO */
 .footer {
@@ -347,10 +328,6 @@ img {
   font-size: 80%;
   color: #ffffff;
   margin: 3% 0% 0% 0%; }
-
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-  .copyRight {
-    align-self: center; } }
 
 /* FOOTER FINAL */
 /* ESTILO PARA FORMULARIO */
@@ -385,3 +362,26 @@ img {
     margin: 0px 5px; }
   .aside__sociales {
     margin: 0px -5px; } }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .descripcionIndex {
+    margin: 10px 10px 150px 10px; }
+  .descripcionIndex p {
+    font-size: 150%;
+    font-weight: lighter;
+    text-align: left; } }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .clientes h2 {
+    font-size: 112%;
+    text-transform: none;
+    text-align: center;
+    font-weight: normal; }
+  article {
+    align-items: center; }
+  img {
+    width: 120px; } }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .copyRight {
+    align-self: center; } }

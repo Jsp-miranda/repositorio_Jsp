@@ -33,6 +33,10 @@ em {
 h3 {
     @include estiloEm;
 }
+.nav{
+    background-color: $gris78;
+}
+
 
 /* FIN ESTILOS GENERALES */
 
@@ -275,13 +279,6 @@ h3 {
 
 
 @media only screen and (min-width:320px) and (max-width: 768px){
-    .rrssIndex{
-        display: none;
-    }
-}
-
-
-@media only screen and (min-width:320px) and (max-width: 768px){
     .mensajeSaludo{
         margin: 150px 0px 0px 0px;
     }
@@ -309,7 +306,7 @@ h3 {
     margin: 10px 10px 150px 10px;
 }
     .descripcionIndex p{
-        font-size: $medidaPorcentual100 + 50;
+        font-size: $medidaPorcentual100;
         font-weight: lighter;
         text-align: left;
     }
@@ -318,7 +315,7 @@ h3 {
 
 @media only screen and (min-width:320px) and (max-width: 768px){
     .clientes h2{
-    font-size: $medidaPorcentual100 + 12;
+    font-size: $medidaPorcentual100;
     text-transform: none;
     text-align: center;
     font-weight: normal;
@@ -335,5 +332,62 @@ h3 {
 @media only screen and (min-width:320px) and (max-width: 768px){
     .copyRight{
     align-self: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ESTILO TABLA*/ 
+.tabla{
+    color: $gris67;
+    background-color: $negro;
+    a{
+        color: $gris67;
+    }
+}
+
+.tabla_hover tr:hover{
+    color: $negro;
+    background-color: $blanco;
+    a{
+        text-decoration: underline $gris67;
+        color: $gris67;
     }
 }

@@ -1,0 +1,400 @@
+@charset "UTF-8";
+/* VARIABLES */
+/* BIENVENIDO A VARIABLES    NOTAS CLASE 11
+
+
+Las variables son estilos preseteados que SE REPITEN O REUTILIZAN EN MUCHAS SECCIONES de nuestra pagina
+Estas pueden llegar a ser por ejemplo:
+
+COLORES
+
+DIMENCIONES
+
+FUENTES
+
+para poder llemarlas dentro de nuestro archivo (averiguar como)
+es necesario anteponer el simbolo del peso " $ $ seguido por el nombre de nuestra variable
+
+$tipografia-para-h1:normal 24px/1.5"Helvetica", sans-serif
+
+o tambien puede guardar los colores que ya predestinamos para nuestra página
+
+$color-rojo:#696969
+
+--------------------------------------------------------------------------------------------------
+
+un ejemplo de var podriaN SER LOS COLORES DE LA MARCA
+
+$rojo-marca:#393939;
+$negro-marca:#5gh41;
+$blanco-marca:#fffffff;
+etc
+
+(estos son valores ficticios)
+
+--------------------------------------------------------------------------------------------------
+
+
+VARIABLES GLOBALES       V/S        variables locales
+
+Una variable global es la cual guardamos en este achivo y que despues solo la llamaremos en las distintas hojas de nuestro scss
+
+en cambio
+
+una variable local es la cual se coloca DENTRO de una seccion de codigo ej
+
+.rrssIndex {                   ---------> MURO
+
+    $azul-prueba-de-var-local: #7545FF; ---------> VAR LOCAL           
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-end; 
+
+}                              ---------> MURO
+
+cada vez que una var este dentro de una seccion de codigo esta pasara a tener el nombre de variable LOCAL
+y SOLO AFECTA A ESA PORCION DEL CODIGO! 
+NUNCA A MAS 
+en este caso los muros que limitran que esta variable sea global son las llaves que le colocamos al codigo { }
+
+
+
+--------------------------------------------------------------------------------------------------
+
+
+REPASAR DEFAULT PARA LAS VARS
+
+
+
+
+*/
+/* ESTILOS GENERALES POR ETIQUETA */
+/*estructura base para quitar margenes pre definidos por norma */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* ESTILOS GENERALES */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  background-color: black; }
+
+p {
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff; }
+
+h1 {
+  font-weight: bold;
+  font-size: 500%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 20px 20px;
+  margin: 20px; }
+
+h2 {
+  font-weight: bold;
+  font-size: 500%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 20px 20px;
+  margin: 20px; }
+
+em {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 120%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 20px; }
+
+h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 120%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 20px; }
+
+.nav {
+  background-color: #141414; }
+
+/* FIN ESTILOS GENERALES */
+/* HEADER INICIO */
+.logoJSP {
+  width: 80px;
+  margin: 10px;
+  padding: 5px; }
+
+.titularDePagina {
+  background-image: linear-gradient(to bottom, #3a3939, #141414);
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 0 0 0;
+  padding: 100px 30px 30px 0px; }
+
+.titularDePagina__contenedorBoton {
+  padding: 20px 50px;
+  transform: translateY(200px); }
+
+.titularDePagina__estiloDeBoton {
+  font-weight: bold;
+  font-size: 200%;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #e41a31; }
+
+.titularDePagina__estiloDeBoton:hover {
+  background-color: #141414; }
+
+.rrssIndex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.rrssIndex__lista {
+  list-style-type: none;
+  display: inline-block;
+  margin: 30px 10px;
+  padding: 20px; }
+
+.rrssIndex__enlace {
+  text-transform: none;
+  text-decoration: none;
+  color: #6a6a6a; }
+
+.rrssIndex__enlace:hover {
+  text-decoration: underline #ffffff;
+  color: #ffffff;
+  transition: all 0.5s; }
+
+.rrssIndexContacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.rrssIndexContacto__lista {
+  list-style-type: none;
+  display: inline-block;
+  margin: 30px 10px;
+  padding: 20px; }
+
+.rrssIndexContacto__enlace {
+  text-transform: none;
+  text-decoration: none;
+  color: #6a6a6a; }
+
+.rrssIndexContacto__enlace:hover {
+  text-decoration: underline #ffffff;
+  color: #ffffff;
+  transition: all 0.5s; }
+
+/* HEADER FIN */
+/* MAIN INICIO */
+.mensajeSaludo {
+  text-align: center; }
+
+.mensajeSaludo__hola {
+  font-size: 150%;
+  color: #ffffff;
+  margin: 5px 20px; }
+
+.mensajeSaludo__miNombre {
+  color: #ffffff;
+  margin: 5px 20px;
+  color: #ffffff;
+  transition: all 0.5s; }
+
+/* MAIN FINAL */
+/* ASIDE INICIO */
+.aside {
+  display: flex;
+  flex-direction: column; }
+
+.aside__contactoMailTelegram {
+  margin: 0px 40px; }
+
+.aside__lista {
+  list-style-type: none;
+  display: block;
+  margin: 10px; }
+
+.aside__enlace {
+  font-style: normal;
+  text-transform: none;
+  text-decoration: none;
+  color: #6a6a6a; }
+
+.aside__enlace:hover {
+  text-decoration: underline #ffffff;
+  color: #ffffff;
+  transition: all 0.5s; }
+
+.aside__botonPortfolio {
+  font-style: normal;
+  text-decoration: none;
+  color: #6a6a6a;
+  margin: 0px 40px; }
+
+.aside__botonPortfolio:hover {
+  text-decoration: underline #ffffff;
+  color: #ffffff;
+  transition: all 0.5s; }
+
+.aside__sociales {
+  margin: 0px 40px; }
+
+.aside__lista {
+  list-style-type: none;
+  display: block;
+  margin: 10px; }
+
+.sociales li a {
+  font-style: normal;
+  text-decoration: none;
+  color: #6a6a6a;
+  list-style-type: none; }
+
+.sociales li a:hover {
+  text-decoration: underline #ffffff;
+  color: #ffffff;
+  transition: all 0.5s; }
+
+/* ASIDE FINAL */
+/* DESCRIPCION INICIO */
+.descripcionIndex {
+  padding: 10px; }
+
+.descripcionIndex p {
+  color: #ffffff;
+  font-size: 150%;
+  text-align: justify;
+  margin-bottom: 30px; }
+
+.descripcionIndex p a {
+  text-decoration: none;
+  color: #6a6a6a; }
+
+.descripcionIndex p a:hover {
+  text-decoration: underline #ffffff;
+  color: #ffffff;
+  transition: all 0.5s; }
+
+/* DESCRIPCION FINAL */
+/* CLIENTES INICIO */
+.clientes {
+  width: 100vw;
+  background-color: #141414;
+  justify-content: space-around; }
+
+article {
+  display: inline-block;
+  margin: 20px; }
+
+h2 {
+  padding: 20px; }
+
+img {
+  width: 140px;
+  padding: 10px; }
+
+.clientes img:hover {
+  transform: translateY(-20px); }
+
+/* CLIENTES FINAL */
+/* FOOTER INICIO */
+.footer {
+  background-color: #3a3939;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.caraJSP {
+  width: 50px;
+  margin: 5px;
+  padding: 5px; }
+
+.copyRight {
+  font-size: 80%;
+  color: #ffffff;
+  margin: 3% 0% 0% 0%; }
+
+/* FOOTER FINAL */
+/* ESTILO PARA FORMULARIO */
+.formulario {
+  margin: 50px; }
+  .formulario label {
+    color: #ffffff; }
+
+/* MEDIS QUERYS INDEX */
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .titularDePagina__titulo {
+    font-size: 250%; } }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .rrssIndex {
+    display: none; } }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .mensajeSaludo {
+    margin: 150px 0px 0px 0px; } }
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .aside {
+    margin: 150px 0px 0px 0px; }
+  .aside__contactoMailTelegram {
+    margin: 0px -5px; }
+  .aside__botonPortfolio {
+    margin: 0px 5px; }
+  .aside__sociales {
+    margin: 0px -5px; } }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .descripcionIndex {
+    margin: 10px 10px 150px 10px; }
+  .descripcionIndex p {
+    font-size: 100%;
+    font-weight: lighter;
+    text-align: left; } }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .clientes h2 {
+    font-size: 100%;
+    text-transform: none;
+    text-align: center;
+    font-weight: normal; }
+  article {
+    align-items: center; }
+  img {
+    width: 120px; } }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .copyRight {
+    align-self: center; } }
+
+/* ESTILO TABLA*/
+.tabla {
+  color: #3a3939;
+  background-color: #000000; }
+  .tabla a {
+    color: #3a3939; }
+
+.tabla_hover tr:hover {
+  color: #000000;
+  background-color: #ffffff; }
+  .tabla_hover tr:hover a {
+    text-decoration: underline #3a3939;
+    color: #3a3939; }

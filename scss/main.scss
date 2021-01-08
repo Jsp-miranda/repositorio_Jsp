@@ -49,7 +49,7 @@ h3 {
     padding: $medida10Px - 5px; }
 
 .titularDePagina {
-    background-image: linear-gradient(to bottom, $gris67, $gris78);
+    background-image: url("../img/portadas/portada1.jpg");
     height: 80vh;
     width: 100vw;
     display: flex;
@@ -262,7 +262,7 @@ h3 {
 
 
 
-/* MEDIS QUERYS INDEX */
+/* MEDIAS QUERYS INDEX */
 
 @media only screen and (min-width: 360px) and (max-width: 768px){
     .titularDePagina__titulo{

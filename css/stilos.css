@@ -135,7 +135,7 @@ h3 {
   padding: 5px; }
 
 .titularDePagina {
-  background-image: linear-gradient(to bottom, #3a3939, #141414);
+  background-image: url("../img/portadas/portada1.jpg");
   height: 80vh;
   width: 100vw;
   display: flex;
@@ -339,7 +339,7 @@ img {
   .formulario label {
     color: #ffffff; }
 
-/* MEDIS QUERYS INDEX */
+/* MEDIAS QUERYS INDEX */
 @media only screen and (min-width: 360px) and (max-width: 768px) {
   .titularDePagina__titulo {
     font-size: 250%; } }

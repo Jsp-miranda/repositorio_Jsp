@@ -131,7 +131,8 @@ h3 {
     .mensajeSaludo__hola{
         font-size: $medidaPorcentual100 + 150;
         color: $blanco;
-        margin: 5px 20px; }
+        margin: 5px 20px;
+        text-transform: lowercase;}
     .mensajeSaludo__miNombre{
         color: $blanco;
         margin: 5px 20px;
@@ -161,7 +162,7 @@ h3 {
             text-decoration: none;
             color: $gris55; }
         .aside__enlace:hover {
-            text-decoration: underline $blanco;
+            text-decoration: underline $rojoMarca;
             color: $blanco;
             transition: all 0.5s; }
 
@@ -249,24 +250,23 @@ h3 {
     background-color: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around; }
+    justify-content: space-between; }
 
 .caraJSP {
-    width: $medida10Px * 5;
-    margin: $medida10Px - 5;
-    padding: $medida10Px - 5; }
+    width: $medida10Px * 10;
+    padding: $medida10Px + 5; 
+}
 
 .copyRight {
     font-size: $medidaPorcentual100 - 20;
     color: $blanco;
-    margin: 3% 0% 0% 0%; }
+    padding: 20px }
     /* FOOTER FINAL */
 
 
 /* ESTILO PARA FORMULARIO */
 .formulario{
     margin: 50px;
-
     label{
         color: $blanco;
     }
@@ -348,23 +348,6 @@ h3 {
     left: calc(-430px - 45px);
 }
 
-/* -------------------------
------ Media Queries ----- 
- ------------------------- */
-
-@media screen and (min-width:320px) and (max-width: 768px){
-    .timeline ul li {
-        margin-left: 20px;
-    }
-    .timeline ul li .content {
-        width: calc(120vw - 190px);
-    }
-    .timeline ul li:nth-child(even) .content {
-        left: 45px;
-    }
-
-}
-
 .text-center {
     text-align: center;
 }
@@ -391,12 +374,30 @@ h3 {
     color: #ffffff;
 }
 
+/* -------------------------
+----- Media Queries ----- 
+ ------------------------- */
+
+@media screen and (min-width:320px) and (max-width: 768px){
+    .timeline ul li {
+        margin-left: 20px;
+    }
+    .timeline ul li .content {
+        width: calc(120vw - 190px);
+    }
+    .timeline ul li:nth-child(even) .content {
+        left: 45px;
+    }
+
+}
+
 
 /* MEDIAS QUERYS INDEX */
 
 @media only screen and (min-width: 360px) and (max-width: 768px){
     .titularDePagina__titulo{
     font-size: ($medidaPorcentual100 * 2) + 50;
+    margin: -20px;
     }
 }
 
@@ -407,10 +408,30 @@ h3 {
     }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 768px){
+    .infoHiddenXS{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 3440px){
+    .infoHiddenXL{
+        display: none;
+        margin-top:0px ;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+    .cuerpoIndex{
+        margin-bottom: 0px;
+    }
+}
 
 @media only screen and (min-width:320px) and (max-width: 768px){
     .mensajeSaludo{
-        margin: 150px 0px 0px 0px;
+        margin: 150px 0px 150px 0px;
+        padding: 10px;
     }
 }
 
@@ -419,7 +440,7 @@ h3 {
 
 @media only screen and (min-width: 360px) and (max-width: 768px) {
     .aside{
-        margin: 150px 0px 0px 0px;
+        margin: 10px 0px 100px 0px;
     }
     .aside__contactoMailTelegram{
         margin: 0px -5px;
@@ -435,7 +456,7 @@ h3 {
 
 @media only screen and (min-width:320px) and (max-width: 768px){
     .descripcionIndex{
-    margin: 10px 10px 150px 10px;
+    margin: 10px 10px 0px 10px;
 }
     .descripcionIndex p{
         font-size: $medidaPorcentual100;
@@ -446,10 +467,10 @@ h3 {
 
 
 @media only screen and (min-width:320px) and (max-width: 768px){
-    .clientes h2{
-    font-size: $medidaPorcentual100;
+    .clientes h4{
+    font-size: $medidaPorcentual100 * 2;
     text-transform: none;
-    text-align: center;
+    text-align: left;
     font-weight: normal;
     }
     article{
@@ -460,10 +481,9 @@ h3 {
     }
 }
 
-
 @media only screen and (min-width:320px) and (max-width: 768px){
     .copyRight{
-    align-self: center;
+        align-self: center;
     }
 }
 

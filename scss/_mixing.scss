@@ -4,7 +4,7 @@
 @mixin estiloBody {
     font-family: Arial, Helvetica, sans-serif;
     font-size: $medidaPorcentual100;
-    background-color: black; 
+    background-color: $gris78; 
 }
 
 @mixin estiloParrafo {

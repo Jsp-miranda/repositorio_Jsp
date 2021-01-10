@@ -5,7 +5,10 @@
 @import"colores";
 @import"mixing";
 
-
+@font-face{
+    font-family: "tommyBold";
+    src: url(tipos/bold.ttf);
+}
 /*estructura base para quitar margenes pre definidos por norma */
 * {
     margin: 0;
@@ -73,11 +76,12 @@ h3 {
             text-transform: uppercase;
             text-decoration: none;
             color: $negro;
-            background-color: $blanco;
             border-radius: 15px;
+            box-shadow: 0 -100px $blanco inset;
         }
         .titularDePagina__estiloDeBoton:hover{
-            background-color: $gris78;
+            box-shadow: 0 -100px $negro inset;
+            transition: 1s;
         }
 
 .rrssIndex {
@@ -142,7 +146,7 @@ h3 {
 /* MAIN FINAL */ 
 
 .cuerpoIndex{
-    margin-bottom: 250px;
+    margin-bottom: 200px;
 }
 
 /* ASIDE INICIO */
@@ -229,12 +233,16 @@ h3 {
         display: inline-block;
         margin: $medida10Px * 2; }
 
-    h2 {
-        padding: $medida10Px * 2; }
+    h4 {
+        font-size: 50px;
+        color: $blanco;
+        font-weight: bolder;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 150px;}
 
     img {
         width: 140px;
-        padding: $medida10Px; }
+        padding-bottom: $medida10Px * 20;}
 
 .clientes img:hover {
     transform: translateY(-20px);
@@ -250,7 +258,8 @@ h3 {
     background-color: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between; 
+}
 
 .caraJSP {
     width: $medida10Px * 10;
@@ -260,7 +269,16 @@ h3 {
 .copyRight {
     font-size: $medidaPorcentual100 - 20;
     color: $blanco;
-    padding: 20px }
+    padding: 50px;
+}
+.copyRight::before{
+    content: "";
+    position: absolute;
+    width: 1050px;
+    height: 3px;
+    background-color: $blanco;
+    top:1em;
+}
     /* FOOTER FINAL */
 
 
@@ -280,7 +298,7 @@ h3 {
     color: $blanco ;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: normal;
     line-height: 1.625em;
     position: relative;
 }
@@ -318,11 +336,15 @@ h3 {
 .timeline ul li .content {
     background-color: $gris78 ;
     border-radius: 10px;
-    box-shadow: 0px 10px 27px 3px rgba(0, 0, 0, 0.973);
+    box-shadow: 0px 10px 27px 3px $negro;
     position: relative;
     top: 7px;
-    width: 360px;
+    width: 450px;
     padding: 30px;
+}
+
+.timeline time{
+    font-size: 20px;
 }
 
 .timeline ul li .content h4 {
@@ -336,7 +358,7 @@ h3 {
 }
 
 .timeline ul li .content p b {
-    color: rgb(37, 37, 37);
+    color: $rojoMarca;
 }
 
 
@@ -374,9 +396,50 @@ h3 {
     color: #ffffff;
 }
 
+
+/* ESTILOS PARA SECCION DE CONTACTO */
+
+.rrssIndexContacto{
+    margin-top: 50px;
+    a{
+        color: $blanco;
+        font-size: 20px;
+    }
+}
+.rrssIndexContacto a:hover{
+        color: $negro;
+        text-decoration: underline $negro;
+}
+
+.areaTexto{
+    background-color: $gris78;
+    border: solid $rojoMarca;
+}
+
+.botonSumbit{
+    background-color: $rojoMarca;
+    border: $gris78;
+    box-shadow: 0 -5px #BC1833 inset
+}
+
+.botonSumbit:hover{
+    background-color: $gris55;
+    color: $negro;
+    box-shadow: 0 -100px $blanco inset;
+    transition: 1s;
+}
+
+.googleMaps{
+    padding-bottom: 150px;
+    align-items: center;
+}
+
 /* -------------------------
 ----- Media Queries ----- 
- ------------------------- */
+---------------------- */
+
+
+/* MEDIAS PARA TIMELINE */
 
 @media screen and (min-width:320px) and (max-width: 768px){
     .timeline ul li {
@@ -388,7 +451,6 @@ h3 {
     .timeline ul li:nth-child(even) .content {
         left: 45px;
     }
-
 }
 
 
@@ -467,27 +529,50 @@ h3 {
 
 
 @media only screen and (min-width:320px) and (max-width: 768px){
-    .clientes h4{
-    font-size: $medidaPorcentual100 * 2;
+    .clientes {
+        padding-bottom: 100px;
+    }
+    
+    h4{                                             /*cambie esto */
+    font-size: $medidaPorcentual100 *2;
     text-transform: none;
     text-align: left;
-    font-weight: normal;
+    margin-bottom: 50px;
+    
     }
     article{
         align-items: center;
     }
     img{
         width: $medida10Px * 12;
+        padding: 10px;
     }
 }
 
 @media only screen and (min-width:320px) and (max-width: 768px){
     .copyRight{
         align-self: center;
+        margin: 0px;
+        padding-top: 30px;
     }
 }
 
+@media only screen and (min-width:320px) and (max-width: 768px){
+    .copyRight::before{
+        content: "";
+        position: absolute;
+        width: 310px;
+        height: 3px;
+        background-color: $blanco;
+    }
+}
 
+@media only screen and (min-width:320px) and (max-width: 768px){
+    .caraJSP{
+        width: 90px;
+        margin-right: 20px;
+    }
+}
 
 
 

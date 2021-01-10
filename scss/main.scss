@@ -244,6 +244,15 @@ h3 {
     }
 }
 
+.contactoMailPortfolio{
+    margin-top: 150px;
+    padding-left: 55px;
+    a{
+        color: $blanco;
+        text-decoration: underline $blanco;
+    } 
+}
+
 .contactoMail a:hover{
     color: $rojoMarca;
     text-decoration: none;
@@ -410,6 +419,10 @@ h3 {
     padding-bottom: 70px;
 }
 
+.border-blanco{
+    border-bottom: solid $blanco;
+}
+
 .section-pad {
     padding: 120px 0;
 }
@@ -494,7 +507,8 @@ h3 {
 
 .contenidoProyecto{
     padding-bottom: 50px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+
 }
 .tipoProyecto{
     font-weight: lighter;
@@ -520,24 +534,7 @@ h3 {
 }
 
 
-
-
-
-
-
-
-
-/*        ACA ESTA LA GRASA      */
-
-
-
-
-
-
-
-
-
-
+/*        ESTILOS GALERIA      */
 
 img{
     max-width: 200%;
@@ -553,10 +550,10 @@ img{
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 10px auto; }
+    margin: 50px auto; }
 
 .gallery-item {
-    margin: 20px;
+    margin: 2px;
     padding: 10px;
     transition: all .2s;
     position: relative; }
@@ -568,9 +565,28 @@ img{
 .gallery-container:hover .gallery-item:not(:hover) {
     opacity: .2; }
 
+.gallery-item img {
+    width: 200px;
+    display: block;
+    border: 1px solid $rojoMarca }
+
+
+
+/* ------------------------------ Media Queries --------------------------- */
+
+/* MEDIA GALERIA */
+
 @media screen and (min-width:320px) and (max-width: 768px){
     .gallery-item {
-    width: 50%; 
+    width: 100%; 
+    margin: 0%;
+}
+}
+
+@media screen and (min-width:320px) and (max-width: 768px){
+    .gallery-item img{
+    width: 100%; 
+    margin: 0%;
 }
 }
 
@@ -580,39 +596,6 @@ img{
         
 }
 }
-
-.gallery-item img {
-    width: 200px;
-    display: block;
-    border: 1px solid $rojoMarca }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------------------ Media Queries --------------------------- */
-
 
 /* MEDIAS PARA TIMELINE */
 
@@ -724,7 +707,11 @@ img{
     }
 }
 
+
+
 /* MEDIAS PORTAFOLIO */
+
+
 @media only screen and (min-width:320px) and (max-width: 768px){
     .rrssIndexContacto{
         display: none;
@@ -736,6 +723,16 @@ img{
         display: none;
     }
 }
+
+@media screen and (min-width:320px) and (max-width: 768px){
+    .descripcionProyecto {
+        font-size: 20px;
+}
+}
+
+
+
+
 
 
 @media only screen and (min-width:320px) and (max-width: 768px){

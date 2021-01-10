@@ -313,7 +313,7 @@ h3 {
   transition: all 0.5s; }
 
 /* DESCRIPCION FINAL */
-/* SECCION SERVICIOS */
+/* SECCION CONTACTO MAILTO */
 .skillsServicios {
   color: #ffffff;
   padding-bottom: 50px;
@@ -528,6 +528,69 @@ li {
     text-decoration: underline #3a3939;
     color: #3a3939; }
 
+.contenidoProyecto {
+  padding-bottom: 50px;
+  margin-bottom: 50px; }
+
+.tipoProyecto {
+  font-weight: lighter;
+  font-size: 18px; }
+
+.descripcionProyecto {
+  font-size: 25px;
+  padding-bottom: 20px; }
+
+.containerVinculos p {
+  color: #6a6a6a; }
+  .containerVinculos p a {
+    color: #6a6a6a;
+    text-decoration: underline #6a6a6a; }
+
+.containerVinculos a:hover {
+  color: #ffffff;
+  text-decoration: underline #ffffff;
+  transition: 1s; }
+
+/*        ACA ESTA LA GRASA      */
+img {
+  max-width: 200%;
+  margin: 0px;
+  padding: 0px; }
+
+.gallery-container {
+  max-width: 900px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 10px auto; }
+
+.gallery-item {
+  margin: 20px;
+  padding: 10px;
+  transition: all .2s;
+  position: relative; }
+
+.gallery-container:hover .gallery-item:hover {
+  transform: scale(2);
+  z-index: 200; }
+
+.gallery-container:hover .gallery-item:not(:hover) {
+  opacity: .2; }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .gallery-item {
+    width: 50%; } }
+
+@media screen and (min-width: 768px) and (max-width: 3440px) {
+  .gallery-item {
+    width: 25%; } }
+
+.gallery-item img {
+  width: 200px;
+  display: block;
+  border: 1px solid #e41a31; }
+
 /* ------------------------------ Media Queries --------------------------- */
 /* MEDIAS PARA TIMELINE */
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -589,7 +652,6 @@ li {
   .clientes {
     padding-bottom: 100px; }
   h4 {
-    /*cambie esto */
     font-size: 200%;
     text-transform: none;
     text-align: left;

@@ -224,7 +224,7 @@ h3 {
 
 /* DESCRIPCION FINAL */
 
-/* SECCION SERVICIOS */
+/* SECCION CONTACTO MAILTO */
 
 .skillsServicios{
     color: $blanco;
@@ -474,8 +474,6 @@ h3 {
     }
 }
 
-
-
 .tabla{
     color: $gris67;
     background-color: $negro;
@@ -492,6 +490,125 @@ h3 {
         color: $gris67;
     }
 }
+
+
+.contenidoProyecto{
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+.tipoProyecto{
+    font-weight: lighter;
+    font-size: 18px;
+}
+.descripcionProyecto {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.containerVinculos{
+    p{
+        color: $gris55;
+    a{
+        color: $gris55;
+        text-decoration: underline $gris55;
+}
+}
+}
+.containerVinculos a:hover{
+    color: $blanco;
+    text-decoration: underline $blanco;
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+/*        ACA ESTA LA GRASA      */
+
+
+
+
+
+
+
+
+
+
+
+img{
+    max-width: 200%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.gallery-container {
+    max-width: 900px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 10px auto; }
+
+.gallery-item {
+    margin: 20px;
+    padding: 10px;
+    transition: all .2s;
+    position: relative; }
+
+    .gallery-container:hover .gallery-item:hover {
+    transform: scale(2);
+    z-index: 200; }
+
+.gallery-container:hover .gallery-item:not(:hover) {
+    opacity: .2; }
+
+@media screen and (min-width:320px) and (max-width: 768px){
+    .gallery-item {
+    width: 50%; 
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 3440px){
+    .gallery-item {
+        width: 25%;
+        
+}
+}
+
+.gallery-item img {
+    width: 200px;
+    display: block;
+    border: 1px solid $rojoMarca }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ------------------------------ Media Queries --------------------------- */
@@ -591,7 +708,7 @@ h3 {
         padding-bottom: 100px;
     }
     
-    h4{                                             /*cambie esto */
+    h4{
     font-size: $medidaPorcentual100 *2;
     text-transform: none;
     text-align: left;

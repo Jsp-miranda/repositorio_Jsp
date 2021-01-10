@@ -40,7 +40,6 @@ h3 {
     background-color: $gris78;
 }
 
-
 /* FIN ESTILOS GENERALES */
 
 
@@ -137,6 +136,11 @@ h3 {
         color: $blanco;
         margin: 5px 20px;
         text-transform: lowercase;}
+    .mensajeSaludo__servicios{
+        font-size: $medidaPorcentual100 + 150;
+        color: $blanco;
+        margin: 5px 20px;
+        text-transform: uppercase;}
     .mensajeSaludo__miNombre{
         color: $blanco;
         margin: 5px 20px;
@@ -220,7 +224,31 @@ h3 {
 
 /* DESCRIPCION FINAL */
 
+/* SECCION SERVICIOS */
 
+.skillsServicios{
+    color: $blanco;
+    padding-bottom: 50px ;
+    font-size: 20px;
+    list-style: none;
+    span{
+        padding-right: 50px;
+    }
+}
+
+.contactoMail{
+    padding-left: 55px;
+    a{
+        color: $blanco;
+        text-decoration: underline $blanco;
+    }
+}
+
+.contactoMail a:hover{
+    color: $rojoMarca;
+    text-decoration: none;
+    transition: 1s;
+}
 
 
 /* CLIENTES INICIO */
@@ -617,8 +645,6 @@ h3 {
         margin-right: 20px;
     }
 }
-
-
 
 
 

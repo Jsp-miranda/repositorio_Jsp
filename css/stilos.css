@@ -222,6 +222,12 @@ h3 {
   margin: 5px 20px;
   text-transform: lowercase; }
 
+.mensajeSaludo__servicios {
+  font-size: 250%;
+  color: #ffffff;
+  margin: 5px 20px;
+  text-transform: uppercase; }
+
 .mensajeSaludo__miNombre {
   color: #ffffff;
   margin: 5px 20px;
@@ -307,6 +313,26 @@ h3 {
   transition: all 0.5s; }
 
 /* DESCRIPCION FINAL */
+/* SECCION SERVICIOS */
+.skillsServicios {
+  color: #ffffff;
+  padding-bottom: 50px;
+  font-size: 20px;
+  list-style: none; }
+  .skillsServicios span {
+    padding-right: 50px; }
+
+.contactoMail {
+  padding-left: 55px; }
+  .contactoMail a {
+    color: #ffffff;
+    text-decoration: underline #ffffff; }
+
+.contactoMail a:hover {
+  color: #e41a31;
+  text-decoration: none;
+  transition: 1s; }
+
 /* CLIENTES INICIO */
 .clientes {
   width: 100vw;

@@ -480,9 +480,29 @@ li {
   padding-bottom: 150px;
   align-items: center; }
 
-/* -------------------------
------ Media Queries ----- 
----------------------- */
+/* ESTILOS SECCION PORTFOLIO */
+.revisionPortfolio {
+  padding-bottom: 150px; }
+  .revisionPortfolio em {
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px; }
+
+.tabla {
+  color: #3a3939;
+  background-color: #000000; }
+  .tabla a {
+    color: #3a3939; }
+
+.tabla_hover tr:hover {
+  color: #000000;
+  background-color: #ffffff; }
+  .tabla_hover tr:hover a {
+    text-decoration: underline #3a3939;
+    color: #3a3939; }
+
+/* ------------------------------ Media Queries --------------------------- */
 /* MEDIAS PARA TIMELINE */
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .timeline ul li {
@@ -554,6 +574,15 @@ li {
     width: 120px;
     padding: 10px; } }
 
+/* MEDIAS PORTAFOLIO */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .rrssIndexContacto {
+    display: none; } }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .revisionPortfolio {
+    display: none; } }
+
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .copyRight {
     align-self: center;
@@ -572,17 +601,3 @@ li {
   .caraJSP {
     width: 90px;
     margin-right: 20px; } }
-
-/* ESTILO TABLA*/
-.tabla {
-  color: #3a3939;
-  background-color: #000000; }
-  .tabla a {
-    color: #3a3939; }
-
-.tabla_hover tr:hover {
-  color: #000000;
-  background-color: #ffffff; }
-  .tabla_hover tr:hover a {
-    text-decoration: underline #3a3939;
-    color: #3a3939; }

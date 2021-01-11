@@ -139,7 +139,7 @@ h3 {
   padding: 5px; }
 
 .titularDePagina {
-  background-image: url("../img/portadas/portada1.jpg");
+  background-image: url("../img/portadas/portada-pc.png");
   height: 80vh;
   width: 100vw;
   display: flex;
@@ -336,6 +336,11 @@ h3 {
     text-decoration: underline #ffffff; }
 
 .contactoMail a:hover {
+  color: #e41a31;
+  text-decoration: none;
+  transition: 1s; }
+
+.contactoMailPortfolio a:hover {
   color: #e41a31;
   text-decoration: none;
   transition: 1s; }

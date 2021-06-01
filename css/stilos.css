@@ -587,11 +587,11 @@ img {
   position: relative; }
 
 .gallery-container:hover .gallery-item:hover {
-  transform: scale(2);
+  transform: scale(3);
   z-index: 200; }
 
 .gallery-container:hover .gallery-item:not(:hover) {
-  opacity: .2; }
+  opacity: .1; }
 
 .gallery-item img {
   width: 200px;
